@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <!--anime css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,600;1,200;1,300&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>BMI Calculator || Pharmacy</title>
+   </head>
+  <body>
+
+<!--Preloader-->
+<div class="preloader">
+  <div class="loader">
+    <div class="spinner">
+      <div class="spinner-container">
+        <div class="spinner-rotator">
+          <div class="spinner-left">
+            <div class="spinner-circle"></div>
+          </div>
+          <div class="spinner-right">
+            <div class="spinner-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+          <a href="index.html" class="navbar-brand">Pharmacy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+           
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a href="index.html"class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link">Useful Links</a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="bmi.html" class="nav-link">BMI Calculator</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="aboutUs.html" class="nav-link">About-Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#"class="nav-link"><i class="fas fa-phone-square-alt"></i>+233 (209) 422-410</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-envelope"></i>info@pharmacy.com</a>
+              </li>
+              
+            </ul>
+         </div>
+        </div>
+      </nav>
+      
+    <!--End of NAV-->
+
+    
+
+
+     
+ <!--Services layout-->
+<section id="" class="mt-5">
+    <hr class="my-5" />
+<div class="container-lg">
+
+<div class="row justify-content-center align-items-center">
+  <div class="col-md-7 text-center text-md-start ">
+   
+      <h4 class="">Why you need to know your BMI</h4>
+      <p class="">Your BMI is a measurement that is a ratio of your weight and height. It’s a good way to gauge whether your weight is in healthy proportion to your height. In fact, knowing your BMI can help you determine any health risks you may face if it’s outside of the healthy range.
+      </p>
+
+</div>
+  <div class="col-md-5 text-center d-md-block">
+    <img class="img-fluid wow fadeInRightBig" data-wow-duration="3s" data-wow-delay="0.3s" src="assets/img/Services/Health _Outline.svg" alt="">
+  </div>
+</div>
+
+</div>
+<hr class="my-3" />
+</section>
+
+
+
+
+ <!--bmi layout-->
+ <section id="">
+    <div class="container-lg">
+    
+    <div class="row justify-content-center align-content-center">
+    <div class="col-md-7 text-start text-md-start ">
+
+        <h4 class=" text-primary">BMI GUIDE</h4>
+        
+            <p class=" my-3 text-muted wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.3s">Under Weight = Less Than 18.5 BMI</p>
+            <p class=" my-3 text-muted wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.3s">Healthy Weight = 18.5 to 24.9 BMI</p>
+            <p class=" my-3 text-muted wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.3s">Over Weight = 25 to 29.9 BMI</p>
+            <p class=" my-3 text-muted wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.3s">Obese = 30 or Greater BMI</p>
+     
+    
+    
+    </div>
+    <div class="col-md-5 d-md-block mt-5 ">
+
+        <div class="row ">
+            <div class="col-lg-6 col-md-6 mb-3 d-md-block">
+                <label for="weight">Weight</label>
+                <input type="text"   name="bmi"  placeholder="kg" id="weight" class=" form-control form-control-lg">
+            </div>
+            <div class="col-lg-6 col-md-6 mb-3 d-md-block">
+                <label for="height">Height</label>
+                <input type="text"  name="bmi"  placeholder="cm" id="height" class=" form-control form-control-lg">
+            </div>
+
+            <div class="col-lg-12 col-md-12 mb-3 d-md-block">
+                <input type="submit"  value="Calculate" id="calculate" class=" form-control form-control-lg">
+            </div>
+
+            <div class="col-lg-12 col-md-6 mb-3 text-primary" id="yourBMI">
+                <h5 class="text-center mt-3"></h5>
+                Your BMI is : <span>00</span>
+                </h5>
+                
+            </div>  
+            <div class="col-lg-12 col-md-12 mb-3 text-primary text-center ">
+                <a href="#bmi-Calc" class="btn btn-primary mt-5">Speak to health assistant</a>
+
+            </div>
+</div>
+
+
+
+    </div>
+    </div>
+    
+    </div>
+    <hr class="my-5" />
+    </section>
+
+    <section id="#">
+        <div class="container-md">
+          <div class="text-center">
+            <h2>FAQ</h2>
+            <p>Frequently asked questions. Get knowledge before hand.</p>
+          </div>
+      
+      <div class="row my-5 g-5 justify-content-around align-items-center">
+      
+      <div class="col-6 col-lg-4">
+        <img class="img-fluid" src="assets/img/Services/Question_Flatline.svg" alt="">
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="row mt-5">
+          <div class="col-md-12">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+        
+                  <!--*********** ACCORDIAN item 1 ********---> 
+                  <div class="accordion-item shadow mb-3">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        What is BMI?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">BMI is an acronym for Body Mass Index, and it is an indicator of the amount of fat which is stored in the human body. It provides a measure of the appropriateness of your weight to your height, based on health issues which are known to arise as a result of having a BMI which is too low or too high.</div>
+                    </div>
+                  </div>
+        
+                  <!--*********** ACCORDIAN item 2 ********---> 
+                  <div class="accordion-item shadow mb-3">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Why is BMI important?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">BMI is important as it is able to predict, with considerable accuracy, mortality and morbidity rates in populations. What this means is that BMI is not only able to predict the rates at which people within a given population or group will die and suffer disease, but it is able to predict the incidence of the different types of diseases which occur in the population and which cause those deaths. However, as Adolphe Quetelet (see ‘Who invented BMI?’ above) and Ancel Keys stressed, BMI’s predictive abilities apply to populations only, and not to individuals within it.
+
+                    </div>
+                    </div>
+                  </div>
+        
+                  <!--*********** ACCORDIAN item 3 ********---> 
+                  <div class="accordion-item shadow mb-3">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Is BMI a useful measure of health?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Studies do show people with a high BMI have a higher risk of disease. And people who improve their BMI by losing weight also improve their health.</div>
+                    </div>
+                  </div>
+        
+                  <!--*********** ACCORDIAN item 4 ********---> 
+                  <div class="accordion-item shadow mb-3">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Is gender a factor in BMI?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Yes, gender is a factor in BMI, even though the World Health Organisation (for simplicity) uses the same BMI categories and ranges for both males and females. However, it is well documented that women tend to carry higher levels of stored fat than men1,2. For women with a BMI in the healthy weight range, fat comprises around 15% to 20% of total body weight, whereas the corresponding percentages in men are 10% to 15%. The reason why women tend to carry more fat than men is the biological expectation of pregnancy, and the imperative to nourish the feotus.</div>
+                    </div>
+                  </div>
+           
+          </div>
+        </div>
+        </div>
+      
+      </div>
+      </div>
+        </div>
+      </div>
+      </section>
+         
+
+
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom"
+  >
+   
+    <!-- Right -->
+    <div class="justify-content-center">
+      <i class="fab fa-whatsapp fa-2x"></i> 
+      <i class="fab fa-facebook fa-2x"></i>
+      <i class="fab fa-twitter fa-2x"></i>
+      <i class="fab fa-instagram fa-2x"></i>
+  </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i> Pharmacy
+          </h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dicta.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Quick Services
+          </h6>
+          <p>
+            <a href="#!" class="">BP Check</a>
+          </p>
+          <p>
+            <a href="#!" class="">Malaria Test</a>
+          </p>
+          <p>
+            <a href="#!" class="">Ovulation Test</a>
+          </p>
+          <p>
+            <a href="#!" class="">Pregnancy Test</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="">Latest Posts</a>
+          </p>
+          
+         
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Adenta, Accra-Ghana</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@pharmacy.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +233 209422410</p>
+          <p><i class="fas fa-print me-3"></i> +233 269759990</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright
+    <a class=" fw-bold text-white" href=""> Pharmacy</a>
+    Powered by ||
+    <a class="fw-bold text-white" href="">Bariche</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <!--jquery JS-->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    
+    <!--Bootstrap JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Wow js-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--Main JS-->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/bmi.js"></script>
+    <!--Tidio JS-->
+    <script src="//code.tidio.co/igsblrynshrsq5m71gnddt55k98qnnal.js" async></script>
+    
+    <!--Google Maps API-->
+    <script src="http://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script>
+   
+   
+  </body>
+</html>
