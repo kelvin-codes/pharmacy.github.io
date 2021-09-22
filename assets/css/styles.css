@@ -265,21 +265,33 @@ p a{
   
 
 .navbar-brand{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  //font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
 }
 
-  /**********Carousel********/
+  /**********Carousel*******
   .carousel-item{
     height: 650px;
+    
+    object-fit: none;
+    object-position: center center;
+  }
+*/
+  .about-header{
+    background-image:url('../img/Hero/home-1.jpg');
+    background-repeat:no-repeat;
+    background-position:center ;
+    background-size:cover;
+    height:450px;
   }
 
   @media only screen 
 and (min-device-width:320px)
 and (max-device-width:568px) 
 and (-webkit-min-device-pixel-ratio:2){
-  .carousel-item{
-    height:auto;
+  .about-header{
+    height:450px;
+   
   }
 }  
   /**********End of Carousel********/
